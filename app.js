@@ -31,9 +31,12 @@ async function getMovie(e) {
     let movieStr = movieArr.join("+");
     const response = await fetch(`https://www.omdbapi.com/?apikey=766cab62&t=${movieStr}`);
     // console.log(response);
+
     const data = await response.json();
-    if (!data.Title) {
-      throw Error("There isn't such a movie. Please enter a valid movie name.");
+    console.log(response);
+    console.log(input.value.toLowerCase());
+    if (!data.Title || input.value.toLowerCase() !== data.Title.toLowerCase()) {
+      throw Error("There isn't such a movie. Please enter a full valid movie name.");
     }
     createCard(data);
   } catch (err) {

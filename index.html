@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie API</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Movies Finder</h2>
+        <p class="p1">Welcome! <br />Find the information you need to decide which movie to watch.</p>
+        <!-- <p class="p2">Enter a movie name and click "find movie" or press enter.</p> -->
+      </header>
+
+      <form id="getUser">
+        <!-- <label for="github-user">Please enter the user github url and submit:</label> -->
+        <input type="text" id="inputUrl" placeholder="enter movie name" />
+        <button id="submit">Find Movie</button>
+      </form>
+      <div class="error"></div>
+      <div class="movie-container">
+        <div class="poster"></div>
+        <div class="main">
+          <h2 class="title"></h2>
+          <div class="genre"></div>
+          <div class="plot"></div>
+          <div class="director"></div>
+          <div class="actors"></div>
+          <div class="ratings"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

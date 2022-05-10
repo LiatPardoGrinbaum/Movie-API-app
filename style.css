@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: url(./pic.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+}
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-size: 40px;
+  color: rgb(233, 210, 250);
+  margin: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* background: #f4f4f4; */
+}
+
+header p {
+  font-size: 14px;
+  text-align: center;
+  color: #f4f4f4;
+  margin: 0rem;
+  margin-bottom: 1rem;
+}
+
+.p1 {
+  font-size: 1.2rem;
+}
+
+form {
+  width: 280px;
+  height: 50px;
+  background: #cbc2c241;
+  /* background: #aeacac; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.3rem; */
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#submit {
+  border: none;
+  padding: 0.5rem 0.5rem;
+  background: rgba(141, 93, 204, 0.973);
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#submit:hover {
+  color: rgb(114, 190, 190);
+  background: #333;
+  box-shadow: none;
+}
+
+#inputUrl {
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0.5rem 0.5rem;
+  z-index: 1;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.movie-container {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #cbc2c241;
+  gap: 1rem;
+  max-width: 750px;
+
+  border-radius: 30px;
+  visibility: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+  width: 70%;
+  color: white;
+}
+.plot,
+.director,
+.actors,
+.pRate,
+.ratings {
+  margin: 0px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.ratings,
+.director {
+  margin-top: 0.8rem;
+}
+
+.genre {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: rgba(194, 177, 214, 0.973);
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0;
+}
+
+/* .genre {
+}
+
+.plot {
+ 
+} */
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+ 
+  border-radius: 30px;
+  display: none;
+  text-align: center;
+  margin: 1rem;
+  color: #333;
+  background: #cbc2c2;
+  min-width: 180px;
+  min-height: 220px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: rgba(255, 255, 255, 0.83) 0px 7px 29px 0px;
+  transform: scale(1.05);
+  background: #9b9595;
+} */
+img {
+  box-shadow: rgba(104, 84, 84, 0.895) 0px 5px 15px;
+  border-radius: 30px;
+}
